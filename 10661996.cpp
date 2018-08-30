@@ -4,7 +4,7 @@ int main(){
 int num;
 
 while(num){
-    cout << "Enter any number"<< endl;
+    cout << "please input a number"<< endl;
     cin >> num;
     if (num){
         int x = 2;
@@ -31,4 +31,3 @@ while(num){
 
 return 0;
 };
-
