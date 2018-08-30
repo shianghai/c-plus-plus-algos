@@ -1,26 +1,5 @@
 #include <iostream>
 using namespace std;
-
-//function to check prime number
-int prime_numChecker(int n){
-    int x = 2;
-    bool prime = true;
-    for (x; x<=(n/2); x++){
-        if ((n % x) == 0){
-            prime = false;
-            break;
-        }
-    };
-    if (prime == true){
-        cout << "status = True \nResult: That's a prime number\n" << endl;
-    }
-    else{
-        cout << "status = False \nnumber is divisible by "<< x <<"\nResult: Not a prime number\n" << endl;
-    }
-};
-
-
-
 int main(){
 int number;
 cout
@@ -44,4 +23,21 @@ while(number){
 
 
 return 0;
+};
+//function to check prime number
+int prime_numChecker(int n){
+    int x = 2;
+    bool prime = true;
+    for (x; x<=(n/2); x++){
+        if ((n % x) == 0){
+            prime = false;
+            break;
+        }
+    };
+    if (prime == true){
+        cout << "status = True \nResult: That's a prime number\n" << endl;
+    }
+    else{
+        cout << "status = False \nnumber is divisible by "<< x <<"\nResult: Not a prime number\n" << endl;
+    }
 };
