@@ -1,22 +1,29 @@
 #include <iostream>
 using namespace std;
 int main(){
-int number;
-cout
- << "################################################################" << endl
- << "######################## Welcome ############################" << endl
- << "################## PRIME NUMBER CHECKER. #####################" << endl
- << "######## to QUIT the program enter any non_numeric key #########" << endl
- << "################################################################\n" << endl;
+int num;
 
-while(number){
+while(num){
     cout << "Enter any number"<< endl;
-    cin >> number;
-    if (!cin.fail()){
-        prime_numberChecker(number);
+    cin >> num;
+    if (num){
+        int x = 2;
+        int state = 1;
+        for (x; x<=(n/2); x++){
+            if ((n % x) == 0){
+                state = 0;
+                break;
+            }
+         };
+         if (state == 1){
+             cout << "prime number = True\n" << endl;
+         }
+         else{
+             cout << "prime number = False\n" << endl;
+        }
     }
     else{
-        cout << "Program Exited, GOODBYE." << endl;
+        cout << "Ended." << endl;
         break;
     }
 }
@@ -24,20 +31,4 @@ while(number){
 
 return 0;
 };
-//function to check prime number
-int prime_numChecker(int n){
-    int x = 2;
-    bool prime = true;
-    for (x; x<=(n/2); x++){
-        if ((n % x) == 0){
-            prime = false;
-            break;
-        }
-    };
-    if (prime == true){
-        cout << "status = True \nResult: That's a prime number\n" << endl;
-    }
-    else{
-        cout << "status = False \nnumber is divisible by "<< x <<"\nResult: Not a prime number\n" << endl;
-    }
-};
+
